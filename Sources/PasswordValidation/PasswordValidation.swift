@@ -17,7 +17,7 @@ public struct PasswordValidation {
     }
     
     func isValid(password: String) -> Bool {
-        let regex = "/^[0-9]{6}$/"
+        let regex = "^[0-9]{6}$"
         let result = password.range(of: regex, options: .regularExpression)
         let validPassword = (result != nil)
         return validPassword
